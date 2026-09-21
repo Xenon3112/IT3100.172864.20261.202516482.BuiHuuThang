@@ -1,1 +1,0 @@
-The value of roundedCost is 19. The decimal part was truncated because roundedCost is declared as an integer type (int), which cannot store fractional values
