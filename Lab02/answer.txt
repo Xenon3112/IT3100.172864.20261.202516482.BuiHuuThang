@@ -1,0 +1,7 @@
+1. Khi chọn Cancel thì hàm trả về 2 (CANCEL_OPTION), còn bấm nút X thì trả về -1 (CLOSED_OPTION). Vì ở dòng 8 dùng câu lệnh điều kiện option == YES_OPTION ? "Yes" : "No", mà YES_OPTION bằng 0 nên cả hai trường hợp trên đều rơi vào nhánh "No", khiến màn hình in ra You've chosen: No.
+
+2.
+
+- Muốn hiện 2 nút Yes/No thì thêm tham số JOptionPane.YES_NO_OPTION vào showConfirmDialog.
+
+- Muốn đổi thành "I do" và "I don't" thì dùng JOptionPane.showOptionDialog kết hợp mảng String[] options = {"I do", "I don't"}. Lúc này nút "I do" trả về giá trị 0 nên dòng 8 phải sửa thành option == 0.
