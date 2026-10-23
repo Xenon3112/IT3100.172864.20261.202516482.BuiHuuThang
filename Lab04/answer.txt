@@ -1,0 +1,11 @@
+Question 5 : Java không cho phép điều này . Vì overloading sẽ xét trên chữ ký phải khác nhau . Trong chữ kí chỉ xét số lượng , kiểu dữ liệu và thứ tự tham số chứ không quan tâm tên . Vì vậy cả 2 đều có chung 1 chữ kí là DigitalVideoDisc(String) nên sẽ gây ra lỗi .
+Question 9.1 : Tôi sẽ chọn varags . Vì varargs sẽ tối ưu hơn khi tôi truyền tham chiếu vào và ko bị bó buộc như array . Tôi có thể truyền array , từng biến và cả array và biến đều được nên sẽ dễ chỉnh sửa hơn .
+Question 10 : 
+* Is Java a pass by value or a pass by reference programming language? 
+- Java là ngôn ngữ truyền tham trị ( Pass by value ) .
+* After the call swap(jungleDVD, cinderellaDVD), why do the titles of these two objects
+stay the same?
+- Java là ngôn ngữ truyền theo giá trị (Pass by value). Khi truyền jungleDVD và cinderellaDVD vào hàm swap, Java chỉ tạo ra các bản copy chứa giá trị ô nhớ (địa chỉ) của hai đối tượng đó để đưa vào hàm.
+* After the call changeTitle(jungleDVD, cinderellaDVD.getTitle()), why is the title of
+jungleDVD changed?
+- Vì hàm changeTitle nhận vào một bản copy địa chỉ trỏ thẳng tới đối tượng jungleDVD gốc. Khi hàm chạy lệnh dvd.setTitle(title), nó dùng chính địa chỉ đó để truy cập trực tiếp vào vùng nhớ của đối tượng thật ngoài main và thay đổi trực tiếp tên của nó thành "Cinderella".
